@@ -49,7 +49,7 @@ const ListStackScreen = () => {
 const TaskStackScreen = () => {
   return (
     <TaskStack.Navigator>
-      <TaskStack.Screen name="Tasks" component={Tasks} options={{title:"Tasks", headerTitleAlign:"center"}} />
+      <TaskStack.Screen name="Tasks" component={Tasks} options={{title:"LIKES", headerTitleAlign:"center"}} />
       <TaskStack.Screen name="Details" component={Details} options={{title:"Details", headerTitleAlign:"center"}}  />
     </TaskStack.Navigator>
   )
@@ -98,7 +98,7 @@ export default function App() {
           <Tab.Navigator screenOptions={screenOptions} tabBarOptions={tabBarOptions}>
             <Tab.Screen name="Home" component={HomeStackScreen} />
             <Tab.Screen name="List" component={ListStackScreen} />
-            <Tab.Screen name="Tasks" component={TaskStackScreen} />
+            <Tab.Screen name="LIKES" component={TaskStackScreen} />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

@@ -57,14 +57,14 @@ const Details = ( { route, navigation }) => {
               onPress={()=>{dispatch(removeTask(id))}}
               icon={<Icon name='close' type='ionicon' color='#ffffff' />}
               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor:"gray"}}
-              title='REMOVE TASK' 
+              title='UNLIKE' 
             /> 
             :
             <Button
               onPress={()=>{dispatch(addTask(item))}}
               icon={<Icon name='checkmark' type='ionicon' color='#ffffff' />}
               buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0, backgroundColor:"tomato"}}
-              title='ADD TASK' 
+              title='LIKE' 
             />    
         }
             
