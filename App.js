@@ -49,7 +49,7 @@ const ListStackScreen = () => {
 const TaskStackScreen = () => {
   return (
     <TaskStack.Navigator>
-      <TaskStack.Screen name="Tasks" component={Tasks} options={{title:"LIKES", headerTitleAlign:"center"}} />
+      <TaskStack.Screen name="LIKES" component={Tasks} options={{title:"LIKES", headerTitleAlign:"center"}} />
       <TaskStack.Screen name="Details" component={Details} options={{title:"Details", headerTitleAlign:"center"}}  />
     </TaskStack.Navigator>
   )
@@ -62,7 +62,7 @@ const screenOptions = ({ route }) => ({
     let iconName;
 
     switch(route.name){
-      // focus가 있으면 'home', 'home-outline'
+
       case 'Home':
         iconName = focused
           ? 'home'
@@ -73,15 +73,13 @@ const screenOptions = ({ route }) => ({
           ? 'list'
           : 'list-outline'; 
         break;
-      case 'Tasks':
+      case 'LIKES':
         iconName = focused
-          ? 'checkmark'
-          : 'checkmark-outline'; 
+          ? 'heart'
+          : 'heart-outline'; 
         break;       
-    }
-    
-    // You can return any component that you like here!
-    return <Ionicons name={iconName} size={size} color={color} />;
+    }   
+       return <Ionicons name={iconName} size={size} color={color} />;
   },
 })
 

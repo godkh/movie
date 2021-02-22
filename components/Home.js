@@ -10,17 +10,15 @@ const Home = ({navigation}) => {
   const [keyword, setKeyword] = useState("");
 
   const handleSearch = useCallback((search)=>{
-    console.log(search);
     setKeyword(search);
   }, []);
 
-  const image = { uri: "https://img.cgv.co.kr/WebApp/contents/eventV4/31651/16135446206190.jpg" };
   
   return(
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <ImageBackground source={require("../image/16135446206190.jpg")} style={{ width: "100%", height: "100%" }}>
       <SearchBar platform={"android"} containerStyle={{width:'80%'}}
-        placeholder="Type Here..."
+        placeholder="Search"
         onChangeText={handleSearch}
         value={keyword}
       />
