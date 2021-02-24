@@ -1,9 +1,9 @@
 {
-  "name": "react-native-lecture",
-  "displayName": "react-native-lecture",
+  "name": "op",
+  "displayName": "op",
   "expo": {
-    "name": "react-native-lecture",
-    "slug": "react-native-lecture",
+    "name": "op",
+    "slug": "op",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
