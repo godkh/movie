@@ -2,7 +2,7 @@
 
 const tasks = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TASK':
+    case 'ADD_TASK_SUCCEEDED':
       
       return [
         ...state, 
@@ -10,10 +10,14 @@ const tasks = (state = [], action) => {
           ...action.payload
         }
       ]
-    case 'REMOVE_TASK':
+    case 'REMOVE_TASK_SUCCEEDED':
       return [
         ...state.filter(item => item.id != action.payload)
       ]
+    case 'FETCH_TASKS_SUCCEEDED':
+      return [
+        ...action.payload
+      ]  
     default:
       return state
   }
